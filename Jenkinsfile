@@ -9,9 +9,11 @@ pipeline {
 
        OKTA_OAUTH2_ISSUER           = 'https://dev-7700958.okta.com/oauth2/default/oauth2/default'
 
-       OKTA_OAUTH2_CLIENT_ID        = credentials('0oa3u0qvoXJ3pl1sT5d6')
+       OKTA_OAUTH2_CLIENT_ID        = credentials('OKTA_OAUTH2_CLIENT_ID')
 
-       OKTA_OAUTH2_CLIENT_SECRET    = credentials('8hZW362-TN1ZteTDItwFBvfwpS4gGX3ojc8suMuy')
+       OKTA_OAUTH2_CLIENT_SECRET    = credentials('OKTA_OAUTH2_CLIENT_SECRET')
+
+
 
    }
 
@@ -24,7 +26,7 @@ pipeline {
 
             // Get some code from a GitHub repository
 
-            git 'https://github.com/<your-username>/simple-app.git'
+            git 'https://github.com/LarryKetone/simple-app.git'
 
 
             // Run Maven on a Unix agent.
